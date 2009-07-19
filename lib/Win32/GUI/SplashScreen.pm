@@ -19,8 +19,8 @@ Win32::GUI::SplashScreen - Win32::GUI SplashScreen support
 
 =cut
 
-our $VERSION = 0.03;
-our $DEBUG=1;  # set to a true value to see console debugging info
+our $VERSION = 0.04;
+our $DEBUG=0;  # set to a true value to see console debugging info
 
 our %INFO;     # package global information
 
@@ -290,7 +290,7 @@ sub _LoadSplash
 	push @dirs, ".";
 	#try to load the splash image from the PAR_TEMP directory
 	#  this is for exes built with PAR's pp -a xxxxx.bmp ...
-	push @dirs, $ENV{PAR_TEMP}."/inc" if exists $ENV{PAR_TMP};
+	push @dirs, $ENV{PAR_TEMP}."/inc" if exists $ENV{PAR_TEMP};
 
 	# try as a bitmap
 	for my $dir (@dirs) {

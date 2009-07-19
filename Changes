@@ -1,5 +1,11 @@
 Revision history for Win32-GUI-HyperLink
 
+0.04     19 July 2009
+         Released on CPAN
+
+ - Correct typo in PAR_TEMP env variable for working with PAR
+ - Turn off debugging for release version!
+
 0.03     17 July 2009
          Released on CPAN
 
